@@ -1,0 +1,33 @@
+{
+  "name": "auth-directive",
+  "version": "1.0.0",
+  "description": "vue自定义指令v-auth封装",
+  "main": "lib/directive.auth.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config",
+    "tsc-build": "tsc --build --clean && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riceecir/directive-auth.git"
+  },
+  "keywords": [],
+  "author": "Riceecir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riceecir/directive-auth/issues"
+  },
+  "homepage": "https://github.com/Riceecir/directive-auth#readme",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vue": "^3.3.8",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.5.1"
+  }
+}
