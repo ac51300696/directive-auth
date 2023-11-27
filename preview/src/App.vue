@@ -1,14 +1,8 @@
 <script setup lang="ts">
-import {
-  // computed,
-  ref
-} from 'vue';
+import { ref } from 'vue';
 const auth = ref<'premission' | 'notPremission'>('premission')
 const state = ref<'mount' | 'destory'>('mount')
 
-/* const mockList = computed(() => {
-  return new Array(500).fill(undefined).map((_, idx) => auth.value + idx)
-}) */
 </script>
 
 <template>
@@ -24,9 +18,6 @@ const state = ref<'mount' | 'destory'>('mount')
   <div v-if="state === 'mount'" >
     <p v-auth="auth">出现了！</p>
   </div>
-  <!-- <template v-for="i in mockList" :key="i">
-    <p v-auth="auth" @click="cb">{{ i }}</p>
-  </template> -->
 </template>
 
 <style>
