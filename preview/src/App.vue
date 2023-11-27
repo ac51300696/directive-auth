@@ -15,8 +15,8 @@ const state = ref<'mount' | 'destory'>('mount')
   
   <p>元素状态: {{state}}</p>
   <p>当前权限: {{ auth }}</p>
-  <div v-if="state === 'mount'" >
-    <p v-auth="auth">出现了！</p>
+  <div v-if="state === 'mount'" v-auth="auth">
+    <p >出现了！</p>
   </div>
 </template>
 
